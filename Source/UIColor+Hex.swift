@@ -9,7 +9,7 @@ extension UIColor {
         let noHashString = hex.stringByReplacingOccurrencesOfString("#", withString: "")
         let scanner = NSScanner(string: noHashString)
         scanner.charactersToBeSkipped = NSCharacterSet.symbolCharacterSet()
-        
+
         var alpha:CGFloat = 1.0
         if noHashString.characters.count > 6 {
             let startIndex = noHashString.endIndex.advancedBy(-2)
@@ -34,7 +34,12 @@ extension UIColor {
     internal func convertToRGBSpace(color: UIColor) -> UIColor {
         let colorSpaceRGB = CGColorSpaceCreateDeviceRGB()
 
-        if  CGColorSpaceGetModel(CGColorGetColorSpace(color.CGColor)) == CGColorSpaceModel.Monochrome {
+        #if swift(>=2.3)
+            let space = CGColorGetColorSpace(color.CGColor)!
+        #else
+            let space = CGColorGetColorSpace(color.CGColor)
+        #endif
+        if  CGColorSpaceGetModel(space) == CGColorSpaceModel.Monochrome {
             let oldComponents = CGColorGetComponents(color.CGColor)
             let colorRef = CGColorCreate(colorSpaceRGB, [oldComponents[0], oldComponents[0], oldComponents[0], oldComponents[1]])!
             let color = UIColor(CGColor: colorRef)
