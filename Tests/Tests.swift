@@ -1,5 +1,6 @@
 import UIKit
 import XCTest
+import Hex
 
 class Tests: XCTestCase {
     func testBlackColor() {
