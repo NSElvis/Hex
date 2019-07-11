@@ -37,9 +37,9 @@ UIColor *color = [[UIColor alloc] initWithHex:@"FF0000"];
 Some examples:
 
 ```swift
-UIColor(hex: "#ff0000")   => UIColor.redColor()
-UIColor(hex: "#ff000075") => UIColor.redColor().colorWithAlphaComponent(0.75)
-UIColor(hex: "#ff000050") => UIColor.redColor().colorWithAlphaComponent(0.50)
+UIColor(hex: "#ff0000")   => UIColor.red
+UIColor(hex: "#ff000075") => UIColor.red.withAlphaComponent(0.75)
+UIColor(hex: "#ff000050") => UIColor.red.withAlphaComponent(0.50)
 ```
 
 
@@ -49,7 +49,7 @@ Using `isEqual` on UIColor doesn't work when you create the color from an `HEX` 
 
 ```swift
 let blackHex = UIColor(hex: "000000")
-let black = UIColor.blackColor()
+let black = UIColor.black
 
 if blackHex.isEqualTo(black) {
     // Do something
