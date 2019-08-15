@@ -12,16 +12,15 @@ Pod::Spec.new do |s|
   }
   s.author = { "Elvis Nuñez" => "elvisnunez@me.com" }
   s.social_media_url = "http://twitter.com/3lvis"
-  s.platform = :ios, '8.0'
   s.ios.deployment_target = '8.0'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
+  s.osx.deployment_target = '10.11'
 
   s.source = {
     :git => 'https://github.com/3lvis/Hex.git',
     :tag => s.version.to_s
   }
   s.source_files = 'Source'
-  s.frameworks = 'UIKit'
   s.requires_arc = true
 end
