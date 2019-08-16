@@ -54,12 +54,31 @@ public extension NSUIColor {
 
 
     /// Get the red, green, blue and alpha values.
-    private var RGBA: [CGFloat] {
+    /// NOTE: This does not work for every color space,
+    /// if the color space is not convertible to RGB then [0,0,0,0] will be returned
+    internal var RGBA: [CGFloat] {
         var r: CGFloat = 0
         var g: CGFloat = 0
         var b: CGFloat = 0
         var a: CGFloat = 0
+        
+        
+        #if os(OSX)
+        if self.colorSpace != NSColorSpace.sRGB {
+            // try to convert to RGB
+            if let color = self.usingColorSpace(.sRGB) {
+                color.getRed(&r, green: &g, blue: &b, alpha: &a)
+            } else {
+                // try anyway and possibly crash
+                self.getRed(&r, green: &g, blue: &b, alpha: &a)
+            }
+        } else {
+            self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        }
+        #else
         self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        #endif
+        
         return [r, g, b, a]
     }
 

@@ -1,6 +1,6 @@
 import Cocoa
 import XCTest
-import Hex
+@testable import Hex
 
 class Tests: XCTestCase {
     func testBlackColor() {
@@ -42,5 +42,15 @@ class Tests: XCTestCase {
         XCTAssertTrue(NSColor(r: 0, g: 0, b: 0).isEqual(to: NSColor.black))
         XCTAssertTrue(NSColor(r: 255, g: 255, b: 255).isEqual(to: NSColor.white))
         XCTAssertTrue(NSColor(r: 0, g: 0, b: 0, a: 50).isEqual(to: NSColor.black.withAlphaComponent(0.5)))
+    }
+    
+    func testRGBA() {
+        let color = NSColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.4)
+        let rgba = color.RGBA
+        
+        XCTAssertEqual(rgba[0], 0.1, accuracy: 0.01)
+        XCTAssertEqual(rgba[1], 0.2, accuracy: 0.01)
+        XCTAssertEqual(rgba[2], 0.3, accuracy: 0.01)
+        XCTAssertEqual(rgba[3], 0.4, accuracy: 0.01)
     }
 }
