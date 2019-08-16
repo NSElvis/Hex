@@ -12,6 +12,11 @@
 		14DEED4B1F95497200A537FB /* Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 147DA2171F9548EB00CCDA49 /* Hex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14DEED4C1F95497400A537FB /* UIColor+Hex.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1424E4391BDE2F6C00E79490 /* UIColor+Hex.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		14DEED4D1F9549AD00A537FB /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A139B31AEFC72B00AD732F /* Tests.swift */; };
+		9932848A2306A9EE00B8F0C0 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424E4391BDE2F6C00E79490 /* UIColor+Hex.swift */; };
+		9932848D2306A9EE00B8F0C0 /* Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 147DA2171F9548EB00CCDA49 /* Hex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9932848E2306A9EE00B8F0C0 /* UIColor+Hex.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1424E4391BDE2F6C00E79490 /* UIColor+Hex.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		993284992306AA1000B8F0C0 /* Hex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147DA20D1F95488B00CCDA49 /* Hex.framework */; };
+		993284A12306AA6700B8F0C0 /* Tests OS X.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993284A02306AA6700B8F0C0 /* Tests OS X.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,12 @@
 		14C0AF811BD6D4230009ECBE /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		14C0AF821BD6D4230009ECBE /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		14C0AF831BD6D4230009ECBE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		993284872306A97000B8F0C0 /* Hex-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Hex-iOS copy-Info.plist"; path = "/Users/voxar/Work/Code/Hex/Hex-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
+		993284932306A9EE00B8F0C0 /* Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		993284942306A9EE00B8F0C0 /* Hex-iOS copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Hex-iOS copy2-Info.plist"; path = "/Users/voxar/Work/Code/Hex/Hex-iOS copy2-Info.plist"; sourceTree = "<absolute>"; };
+		9932849E2306AA1000B8F0C0 /* Tests OS X.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests OS X.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9932849F2306AA1000B8F0C0 /* Tests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tests copy-Info.plist"; path = "/Users/voxar/Work/Code/Hex/Tests copy-Info.plist"; sourceTree = "<absolute>"; };
+		993284A02306AA6700B8F0C0 /* Tests OS X.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tests OS X.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +54,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9932848B2306A9EE00B8F0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993284982306AA1000B8F0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993284992306AA1000B8F0C0 /* Hex.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,6 +80,9 @@
 				146D72AF1AB782920058798C /* Tests */,
 				146D72941AB782920058798C /* Products */,
 				147DA2191F95492B00CCDA49 /* Frameworks */,
+				993284872306A97000B8F0C0 /* Hex-iOS copy-Info.plist */,
+				993284942306A9EE00B8F0C0 /* Hex-iOS copy2-Info.plist */,
+				9932849F2306AA1000B8F0C0 /* Tests copy-Info.plist */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -64,6 +93,8 @@
 			children = (
 				146D72AC1AB782920058798C /* Tests.xctest */,
 				147DA20D1F95488B00CCDA49 /* Hex.framework */,
+				993284932306A9EE00B8F0C0 /* Hex.framework */,
+				9932849E2306AA1000B8F0C0 /* Tests OS X.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				14A139B31AEFC72B00AD732F /* Tests.swift */,
+				993284A02306AA6700B8F0C0 /* Tests OS X.swift */,
 				146D72B01AB782920058798C /* Supporting Files */,
 			);
 			path = Tests;
@@ -124,6 +156,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9932848C2306A9EE00B8F0C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9932848D2306A9EE00B8F0C0 /* Hex.h in Headers */,
+				9932848E2306A9EE00B8F0C0 /* UIColor+Hex.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +203,41 @@
 			productReference = 147DA20D1F95488B00CCDA49 /* Hex.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		993284882306A9EE00B8F0C0 /* Hex-OS X */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 993284902306A9EE00B8F0C0 /* Build configuration list for PBXNativeTarget "Hex-OS X" */;
+			buildPhases = (
+				993284892306A9EE00B8F0C0 /* Sources */,
+				9932848B2306A9EE00B8F0C0 /* Frameworks */,
+				9932848C2306A9EE00B8F0C0 /* Headers */,
+				9932848F2306A9EE00B8F0C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hex-OS X";
+			productName = "Hex-iOS";
+			productReference = 993284932306A9EE00B8F0C0 /* Hex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		993284952306AA1000B8F0C0 /* Tests OS X */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9932849B2306AA1000B8F0C0 /* Build configuration list for PBXNativeTarget "Tests OS X" */;
+			buildPhases = (
+				993284962306AA1000B8F0C0 /* Sources */,
+				993284982306AA1000B8F0C0 /* Frameworks */,
+				9932849A2306AA1000B8F0C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tests OS X";
+			productName = PodTests;
+			productReference = 9932849E2306AA1000B8F0C0 /* Tests OS X.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,6 +258,9 @@
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
+					993284882306A9EE00B8F0C0 = {
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 146D728E1AB782920058798C /* Build configuration list for PBXProject "Demo" */;
@@ -189,6 +268,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -199,6 +279,8 @@
 			targets = (
 				146D72AB1AB782920058798C /* Tests */,
 				147DA20C1F95488B00CCDA49 /* Hex-iOS */,
+				993284882306A9EE00B8F0C0 /* Hex-OS X */,
+				993284952306AA1000B8F0C0 /* Tests OS X */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +294,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		147DA20B1F95488B00CCDA49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9932848F2306A9EE00B8F0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9932849A2306AA1000B8F0C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,6 +330,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				14DEED491F95496A00A537FB /* UIColor+Hex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993284892306A9EE00B8F0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9932848A2306A9EE00B8F0C0 /* UIColor+Hex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993284962306AA1000B8F0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993284A12306AA6700B8F0C0 /* Tests OS X.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -373,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 			};
@@ -442,6 +556,110 @@
 			};
 			name = Release;
 		};
+		993284912306A9EE00B8F0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Hex-iOS copy2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = net.3lvis.hex;
+				PRODUCT_NAME = Hex;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		993284922306A9EE00B8F0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Hex-iOS copy2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = net.3lvis.hex;
+				PRODUCT_NAME = Hex;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9932849C2306AA1000B8F0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9932849D2306AA1000B8F0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Tests copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -468,6 +686,24 @@
 			buildConfigurations = (
 				147DA2121F95488B00CCDA49 /* Debug */,
 				147DA2131F95488B00CCDA49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		993284902306A9EE00B8F0C0 /* Build configuration list for PBXNativeTarget "Hex-OS X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				993284912306A9EE00B8F0C0 /* Debug */,
+				993284922306A9EE00B8F0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9932849B2306AA1000B8F0C0 /* Build configuration list for PBXNativeTarget "Tests OS X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9932849C2306AA1000B8F0C0 /* Debug */,
+				9932849D2306AA1000B8F0C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
