@@ -3,7 +3,7 @@ import Cocoa
 public typealias NSUIColor = NSColor
 #else
 import UIKit
-public typealias NSUIColor = NSColor
+public typealias NSUIColor = UIColor
 #endif
 
 public extension NSUIColor {
